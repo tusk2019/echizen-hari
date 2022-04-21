@@ -1,0 +1,204 @@
+/*-----------------------------------------------------------------
+setting-start
+-----------------------------------------------------------------*/
+/* ----------------------- */
+/* 全ページ共通
+/* ----------------------- */
+html {
+    scroll-padding-top: 100px;
+}
+body {
+    background-color: #FFBF66;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    color: #663a00;
+}
+
+/* ----------------------- */
+/* ヘッダー
+/* ----------------------- */
+header {
+    background: white;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+    z-index: 99;
+}
+.logo-img {
+    width: 330px;
+    height: 55px;
+    /* margin: auto 0 auto 15.4%; */
+    margin: auto 0 auto 7.7%;
+}
+.site-logo {
+    margin-left: 8.2%;
+    font-size: 40px;
+    color: #663a00;
+    font-weight: 900;
+    line-height: 1.35;
+    display: flex;
+    align-items: center;
+}
+.menu-link-wrapper {
+    margin-left: auto;
+    /* margin-right: 14.6%; */
+    margin-right: 7.3%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.menu-link-wrapper a {
+    display: block;
+    text-decoration: none;
+    color: #604C3F;
+    text-align: center;
+    /* font-size: 24px;
+    line-height: 1.28; */
+}
+.menu-link-item-ja {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.45;
+}
+.menu-link-item-en {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.31;
+}
+/* @media screen and (max-width:959px) {
+    .menu-link-wrapper {
+        display:none;
+    }
+} */
+.header-smafo {
+    display: none;
+}
+.phone-number-card {
+    background-color: #FFF2BE;
+    border: 1px solid #604C3F;
+    font-weight: bold;
+    line-height: 1.31;
+    min-width: 163px;
+    height: 52px;
+    border-radius: 10px;
+    display: flex;
+}
+.phone-number-card img{
+    /* width: 16px; */
+    height: 23px;
+    /* margin-top: 12px;
+    margin-left: 10px; */
+    padding-top: 12px;
+    padding-left: 13px;
+}
+.phone-number {
+    display: inline-block;
+    min-width: 140px;
+    font-weight: bold;
+    padding-right: 14px;
+    padding-top: 16px;
+}
+/* ----------------------- */
+/* フッター
+/* ----------------------- */
+footer {
+    font-size: 14px;
+    height: 140px;
+    background-color: #663a00;
+    color: white;
+    line-height: 1.43;
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+.footer-p {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* ----------------------- */
+/* セクションのタイトル
+/* ----------------------- */
+/* .section-title {
+    color: #663a00;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.35;
+    text-decoration: unset;
+    text-align: center;
+}
+.section-title-en {
+    color: #663a00;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.31;
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: auto;
+} */
+
+.t-a-c {
+    text-align: center;
+}
+
+/*1.フェードインアニメーションの指定*/
+.introduction-img {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;         
+    }
+    100% {
+    opacity: 1;
+    transform: translate(0);
+    }
+}
+ 
+/*2.上下の動きを指定*/
+.updown {transform: translateY(-100px);}
+.downup {transform: translateY(100px);}
+ 
+/*3.左右の動きを指定*/
+.sect02{overflow: hidden;} /*横スクロールバーを隠す*/
+.slide-right {transform: translateX(200px);}
+.slide-left {transform: translateX(-200px);}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  .site-logo {
+    font-size: 28px;
+  }
+  .menu-link-item-ja {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.45;
+  }
+  .menu-link-item-en {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.31;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .site-logo {
+    font-size: 16px;
+  }
+  .menu-link-item-ja {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.45;
+  }
+  .menu-link-item-en {
+    font-size: 8px;
+    font-weight: bold;
+    line-height: 1.31;
+  }
+}

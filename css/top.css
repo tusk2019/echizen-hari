@@ -1,0 +1,136 @@
+/* ----------------------- */
+/* トップページ（index.html）
+/* ----------------------- */
+.first-view-box {
+    text-align: center;
+}
+.first-view-img {
+    max-width: 960px;
+    max-height: 640px;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+.section-title {
+    display: inline-block;
+    color: #604C3F;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.44;
+    text-align: center;
+    padding: 10px 60px;
+    border-bottom: 1px solid #663a00;
+}
+.section-title-en {
+    color: #663a00;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.31;
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: auto;
+    padding-top: 10.5px;
+}
+.introduction {
+    margin: 100px 0;
+}
+.introduction-phrase {
+    background-color: white;
+}
+.introduction-box {
+    display: flex;
+    max-width: 960px;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.introduction-img {
+    max-width: 500px;
+    max-height: 340px;
+    margin-top: 12px;
+}
+.introduction-phrase {
+    background-color: white;
+    padding: 20px 25px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1.46;
+    height: 70px;
+    width: 450px;
+    margin-bottom: 20px;
+    color: #604C3F;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+}
+.intro-sentence-wrapper {
+    border-left: 1px solid #663a00;
+}
+.introduction-sentence p {
+    color: #604C3F;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-left: 23px;
+    letter-spacing: 0.05em;
+}
+.h-25 {
+    height: 25px;
+}
+.ticket-price {
+    text-align: center;
+    font-weight: bold;
+}
+.price-table {
+    margin: 0 auto;
+}
+.introduction-box-res {
+    display: none;
+}
+.h-price-under {
+    height: 100px;
+}
+@media screen and (max-width: 959px) {
+    .introduction-box {
+        display: none;
+    }
+    .introduction-phrase {
+        /* max-width: 500px; */
+        max-width: unset;
+        height: unset;
+        font-size: 18px;
+        margin: 20px auto;
+    }
+    .introduction-box-res {
+        display: block;
+    }
+    .introduction-img {
+        max-width: unset;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .intro-sentence-wrapper {
+        width: 500px;
+        max-width: unset;
+        margin: 0 auto;
+        border-right: 1px solid #663a00;
+    }
+    .intro-sentence-p-1 {
+        padding-left: 5px;
+    }
+    .intro-sentence-p-2 {
+        padding-left: 5px;
+    }
+    .intro-sentence-p-3 {
+        padding-left: 5px;
+    }
+}
+@media screen and (max-width: 519px) {
+    .intro-sentence-wrapper {
+        width: unset;
+    }
+    .introduction-phrase {
+        width: unset;
+    }
+}
