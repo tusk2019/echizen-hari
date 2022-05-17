@@ -1,0 +1,180 @@
+/* ----------------------- */
+/* 【contact.php】（お問い合わせページ）
+/* ----------------------- */
+.badge {
+    padding: 1px 6px;
+    margin-right: 8px;
+    margin-left: 5px;
+    font-size: 15px;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 3px #ddd;
+    white-space: nowrap;
+    width: 46px;
+    height: 21px;
+}
+.hissu-badge {
+    background-color: orangered;
+}
+
+.contact-page-caution {
+    width: 467px;
+    height: 42px;
+    margin: 40px auto 19px;
+    font-size: 15px;
+}
+.contact-logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 150px;
+}
+.contact-name {
+    width: 470px;
+    margin: 0 auto;
+}
+.mgr-r-18 {
+    margin-right: 18px;
+}
+.contact-label {
+    width: 330px;
+    text-align: left;
+    font-size: 15px;
+}
+.txt-box4 {
+    width: 144px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid  #CCCCCC;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+.contact-mail {
+    width: 467px;
+    margin: 13px auto;
+}
+.txt-box5 {
+    width: 467px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #CCCCCC;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+.contact-content {
+    width: 467px;
+    margin: 0 auto;
+}
+.content-area {
+    width: 467px;
+    height: 228px;
+    border-radius: 6px;
+    resize: none;
+    border: 2px solid #CCCCCC;
+    padding: 10px;
+    margin: 13px auto 0;
+}
+textarea:focus {
+    outline: none;
+}
+.contact-confirm-btn {
+    width: 230px;
+    height: 47px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: white;
+    color: #663a00;
+    border: 1px solid #663a00;
+    border-radius: 40px;
+    margin: 40px auto 226px;
+    display: block;
+    font-size: 15px;
+}
+.submit-btn {
+    width: 230px;
+    height: 47px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: white;
+    color: #663a00;
+    border: 1px solid #663a00;
+    border-radius: 40px;
+    margin: 75px auto 287px;
+    display: block;
+    font-size: 15px;
+}
+.top-link-btn {
+    width: 230px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: white;
+    color: #663a00;
+    border: 1px solid #663a00;
+    border-radius: 40px;
+    margin: 75px auto 287px;
+    display: block;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 539px) {
+    .contact-page-caution {
+        width: 310px;
+        height: 42px;
+        margin: 40px auto 19px;
+        font-size: 12px;
+    }
+    .contact-logo {
+        font-size: 22px;
+    }
+    .contact-name {
+        width: 310px;
+        margin: 0 auto;
+    }
+    .mgr-r-18 {
+        margin-right: 18px;
+    }
+    .contact-label {
+        width: 310px;
+        text-align: left;
+        font-size: 12px;
+    }
+    .contact-mail {
+        width: 310px;
+        margin: 13px auto;
+    }
+    .txt-box5 {
+        width: 310px;
+        padding: 10px;
+        border-radius: 6px;
+        border: 2px solid #CCCCCC;
+        box-sizing: border-box;
+        font-size: 10px;
+    }
+    .contact-content {
+        width: 310px;
+        margin: 0 auto;
+    }
+    .content-area {
+        width: 285px;
+        height: 228px;
+        border-radius: 6px;
+        resize: none;
+        border: 2px solid #CCCCCC;
+        padding: 10px;
+        margin: 13px auto 0;
+    }
+
+    .contact-confirm-btn {
+        font-size: 12px;
+    }
+    .submit-btn {
+        font-size: 12px;
+    }
+    .top-link-btn {
+        font-size: 12px;
+    }
+  }

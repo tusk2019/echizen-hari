@@ -9,6 +9,10 @@
 	<link rel="stylesheet" href="css/style.css">
   	<link rel="stylesheet" href="css/top.css">
 	<link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+	<style>
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+
+	</style>
 </head>
 <body>
 	<?php include(dirname(__FILE__).'/tpl/header.html'); ?>
@@ -79,7 +83,7 @@
 			</div>
 		</section>
 		<section id="price">
-		<div class="t-a-c">
+			<div class="t-a-c">
 				<p class="section-title">
 					<span class="pink-underline">料金</span>
 				</p>
@@ -103,6 +107,7 @@
 			</table>
 		</section>
 		<div class="h-price-under"></div>
+		<a href="contact.php" class="btn btn--orange btn-c">ご予約、お問い合わせはこちら</a>
 	</main>
 	<footer>
 		<p class="footer-p">©︎2022 Koki Motomura</p>

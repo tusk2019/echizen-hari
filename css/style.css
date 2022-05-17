@@ -9,7 +9,9 @@ html {
 }
 body {
     background-color: #FFBF66;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont,'Noto Sans JP', sans-serif;
+    font-weight: normal;
+    font-style: normal;
     font-size: 16px;
     color: #663a00;
 }
@@ -54,8 +56,6 @@ header {
     text-decoration: none;
     color: #604C3F;
     text-align: center;
-    /* font-size: 24px;
-    line-height: 1.28; */
 }
 .menu-link-item-ja {
     font-size: 20px;
@@ -67,38 +67,9 @@ header {
     font-weight: bold;
     line-height: 1.31;
 }
-/* @media screen and (max-width:959px) {
-    .menu-link-wrapper {
-        display:none;
-    }
-} */
+
 .header-smafo {
     display: none;
-}
-.phone-number-card {
-    background-color: #FFF2BE;
-    border: 1px solid #604C3F;
-    font-weight: bold;
-    line-height: 1.31;
-    min-width: 163px;
-    height: 52px;
-    border-radius: 10px;
-    display: flex;
-}
-.phone-number-card img{
-    /* width: 16px; */
-    height: 23px;
-    /* margin-top: 12px;
-    margin-left: 10px; */
-    padding-top: 12px;
-    padding-left: 13px;
-}
-.phone-number {
-    display: inline-block;
-    min-width: 140px;
-    font-weight: bold;
-    padding-right: 14px;
-    padding-top: 16px;
 }
 /* ----------------------- */
 /* フッター
@@ -117,26 +88,6 @@ footer {
   display: table-cell;
   vertical-align: middle;
 }
-/* ----------------------- */
-/* セクションのタイトル
-/* ----------------------- */
-/* .section-title {
-    color: #663a00;
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1.35;
-    text-decoration: unset;
-    text-align: center;
-}
-.section-title-en {
-    color: #663a00;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.31;
-    text-align: center;
-    padding-bottom: 40px;
-    font-family: auto;
-} */
 
 .t-a-c {
     text-align: center;
@@ -187,7 +138,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 519px) {
+@media screen and (max-width: 539px) {
   .site-logo {
     font-size: 16px;
   }
@@ -201,4 +152,76 @@ footer {
     font-weight: bold;
     line-height: 1.31;
   }
+}
+*,
+*:before,
+*:after {
+-webkit-box-sizing: inherit;
+box-sizing: inherit;
+}
+
+.btn,
+a.btn,
+button.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #663a00;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    display: block;
+}
+a.btn--orange {
+    color: #fff;
+    background-color: #eb6100;
+}
+
+a.btn--orange:hover {
+    color: #fff;
+    background: #f56500;
+}
+
+a.btn-c {
+    font-size: 22px;
+    padding: 1rem 1.5rem;
+    border-radius: 100vh;
+
+}
+
+a.btn-c i.fa {
+    margin-right: 1rem;
+}
+@media screen and (max-width: 767px) {
+    .btn,
+    a.btn,
+    button.btn {
+        font-size: 18px;
+        padding: 0.5rem 1rem;
+    }
+}
+@media screen and (max-width: 539px) {
+    .btn,
+    a.btn,
+    button.btn {
+        font-size: 14px;
+        padding: 0.25rem 0.5rem;
+    }
 }
